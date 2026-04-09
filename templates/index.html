@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert Neurotherapy and Panchakarma treatments by Dr. Sushmita Gumber. Specializing in spine problems, joint pain, neck pain, back pain, slip disc, sciatica, frozen shoulder, migraine, paralysis, arthritis, PCOD, and holistic wellness.">
+    <meta name="keywords" content="Neurotherapy,Panchakarma,Ayurveda,Spine treatment,Joint pain,Neck pain,Back pain,Slip disc,Sciatica,Frozen shoulder,Migraine treatment,Paralysis treatment,Arthritis,PCOD treatment,Dr. Sushmita Gumber">
+    <meta name="author" content="Dr. Sushmita Gumber">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sushmita Gumber - Expert Neurotherapy & Panchakarma Treatment">
+    <meta property="og:description" content="Expert Neurotherapy and Panchakarma treatments specializing in spine problems, joint pain, and holistic wellness.">
+    <meta property="og:type" content="website">
+    <title>Sushmita Gumber - Expert Neurotherapy & Panchakarma Treatment</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="position-absolute top-0 start-0 p-2 bg-primary text-white visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+                <div class="logo-icon">
+                    <i class="bi bi-leaf"></i>
+                </div>
+                <span class="font-serif fw-bold">Dr. Sushmita's</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list text-white fs-1"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#treatments">Treatments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doctors">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conditions">Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <button onclick="openModal()" class="btn btn-primary-custom w-100">
+                            Book Now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="hero-pattern"></div>
+            
+            <div class="container position-relative">
+                <div class="row align-items-center g-5 mb-5">
+                    <!-- Image Side -->
+                    <div class="col-lg-6 fade-in-left">
+                        <div class="position-relative">
+                            <div class="rounded-4 overflow-hidden shadow-lg">
+                                <img src="/static/img/dr_img.jpeg" alt="Dr. Sushmita Gumber" class="img-fluid w-100" loading="eager">
+                                <div class="hero-img-gradient"></div>
+                            </div>
+                            <!-- Floating Card -->
+                            <div class="hero-floating-card glass-card p-4 d-none d-sm-block">
+                                <h5 class="font-serif fw-bold text-teal mb-1">Dr. Sushmita Gumber</h5>
+                                <p class="small mb-0 opacity-75">B.A.M.S, Neurotherapy Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Side -->
+                    <div class="col-lg-6 fade-in-right">
+                        <div class="mb-3">
+                            <span class="badge bg-teal-subtle text-teal px-3 py-2 rounded-pill">
+                                <i class="bi bi-heart-pulse me-1"></i> Our Expertise
+                            </span>
+                        </div>
+                        
+                        <h2 class="display-4 font-serif fw-bold mb-4">
+                            Specialized Care for <br><span class="gradient-text">Neurotherapy & Panchakarma</span>
+                        </h2>
+                        
+                        <div class="text-light lead mb-4 opacity-75">
+                            <p>At <strong class="text-white">Dr. Sushmita Ayurvedic Neurotherapy & Panchakarma Treatment Center</strong>, we provide authentic healing for chronic ailments. Led by Dr. Sushmita Gumber (B.A.M.S.), our center specializes in treating spine and joint problems through non-surgical, traditional Ayurvedic methods.</p>
+                            <p>We combine ancient wisdom with specialized techniques like Cupping Therapy, Agnikarma, and Marma Chikitsa to provide lasting relief from pain.</p>
+                        </div>
+                        
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <div class="glass-card p-4 h-100">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="logo-icon bg-opacity-10">
+                                            <i class="bi bi-activity text-teal"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-serif fw-semibold mb-1">Pain Management</h5>
+                                            <p class="small opacity-50 mb-0">Sciatica, Back Pain, Frozen Shoulder</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="glass-card p-4 h-100">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <div class="logo-icon bg-opacity-10" style="background: rgba(245, 158, 11, 0.1);">
+                                            <i class="bi bi-award text-amber"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-serif fw-semibold mb-1">Chronic Care</h5>
+                                            <p class="small opacity-50 mb-0">PCOD, Arthritis, Migraine, Paralysis</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats -->
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="stats-card">
+                            <div class="mb-3">
+                                <i class="bi bi-people fs-1 text-teal"></i>
+                            </div>
+                            <h3 class="fw-bold gradient-text mb-1">10,000+</h3>
+                            <p class="opacity-50 mb-0">Patients Treated</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stats-card">
+                            <div class="mb-3">
+                                <i class="bi bi-clock fs-1 text-teal"></i>
+                            </div>
+                            <h3 class="fw-bold gradient-text mb-1">14+</h3>
+                            <p class="opacity-50 mb-0">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stats-card">
+                            <div class="mb-3">
+                                <i class="bi bi-shield-check fs-1 text-teal"></i>
+                            </div>
+                            <h3 class="fw-bold gradient-text mb-1">100%</h3>
+                            <p class="opacity-50 mb-0">Natural Healing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section id="treatments" class="section-padding bg-dark bg-opacity-25 position-relative">
+            <div class="position-absolute top-0 start-0 w-100 h-100 pattern-bg opacity-25"></div>
+            
+            <div class="container position-relative z-1">
+                <div class="text-center mx-auto mb-5 fade-in" style="max-width: 700px;">
+                    <span class="badge bg-teal-subtle text-teal px-4 py-2 rounded-pill mb-3">
+                        <i class="bi bi-activity me-1"></i> Our Facilities
+                    </span>
+                    <h2 class="display-5 font-serif fw-bold mb-3">
+                        Therapies & <span class="gradient-text">Treatments</span>
+                    </h2>
+                    <p class="lead opacity-75">We offer a comprehensive range of traditional treatments tailored to your condition, from pain management to chronic disease reversal.</p>
+                </div>
+                
+                <div class="row g-4" id="treatments-row">
+                    <!-- Treatments will be loaded via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctor Section -->
+        <section id="doctors" class="section-padding position-relative">
+            <div class="container position-relative z-1">
+                <div class="row align-items-center g-5">
+                    <!-- Left: Doctor Image -->
+                    <div class="col-lg-5 fade-in-left">
+                        <div class="position-relative">
+                            <div class="rounded-4 overflow-hidden shadow-lg" style="height: 500px;">
+                                <img src="/static/img/dr_img.jpeg" alt="Dr. Sushmita Gumber" class="w-100 h-100 object-fit-cover">
+                                <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark"></div>
+                            </div>
+                            
+                            <div class="position-absolute top-0 end-0 mt-4 me-n4 glass-card px-4 py-2 d-none d-md-block">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="fw-bold">15+ Years</span>
+                                    <span class="small opacity-75">Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Info Content -->
+                    <div class="col-lg-7 fade-in-right">
+                        <div class="mb-4">
+                            <span class="badge bg-teal-subtle text-teal px-4 py-2 rounded-pill mb-3">
+                                <i class="bi bi-person-badge me-1"></i> Head Physician
+                            </span>
+                            <h2 class="display-5 font-serif fw-bold mb-2">Dr. Sushmita Gumber</h2>
+                            <p class="text-teal fs-5">B.A.M.S, Neurotherapy & Panchakarma Specialist</p>
+                        </div>
+                        
+                        <!-- Quote Card -->
+                        <div class="glass-card p-4 mb-4 border-start border-4 border-teal">
+                            <p class="fs-5 fst-italic opacity-75 mb-0">
+                                "My mission is to provide holistic healing for complex neurological and joint disorders. Using a blend of traditional Panchakarma and specialized Neurotherapy, we treat the root cause of the pain."
+                            </p>
+                        </div>
+                        
+                        <!-- Info Grid -->
+                        <div class="row g-3 mb-5">
+                            <div class="col-md-6">
+                                <div class="glass-card p-3 card-hover h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="p-2 bg-teal-subtle rounded-3">
+                                            <i class="bi bi-heart text-teal"></i>
+                                        </div>
+                                        <h6 class="mb-0">Spine & Joint</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="glass-card p-3 card-hover h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="p-2 bg-teal-subtle rounded-3">
+                                            <i class="bi bi-droplet text-teal"></i>
+                                        </div>
+                                        <h6 class="mb-0">Cupping Therapy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="glass-card p-3 card-hover h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="p-2 bg-teal-subtle rounded-3">
+                                            <i class="bi bi-gender-female text-teal"></i>
+                                        </div>
+                                        <h6 class="mb-0">Women's Health</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="glass-card p-3 card-hover h-100">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="p-2 bg-teal-subtle rounded-3">
+                                            <i class="bi bi-lightning text-teal"></i>
+                                        </div>
+                                        <h6 class="mb-0">Neurotherapy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button onclick="openModal()" class="btn btn-primary-custom px-5 py-3 fs-5">
+                            Book Appointment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conditions Section -->
+        <section id="conditions" class="section-padding bg-dark bg-opacity-25">
+            <div class="container">
+                <div class="text-center mb-5 fade-in">
+                    <span class="badge bg-teal-subtle text-teal px-4 py-2 rounded-pill mb-3">
+                        <i class="bi bi-clipboard2-pulse me-1"></i> Conditions
+                    </span>
+                    <h2 class="display-5 font-serif fw-bold mb-3">
+                        We <span class="gradient-text">Treat</span>
+                    </h2>
+                    <p class="opacity-75">Comprehensive Ayurvedic treatments for various chronic conditions</p>
+                </div>
+                
+                <div id="conditions-row" class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                    <!-- Cards will be rendered via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 fade-in">
+                    <span class="badge bg-teal-subtle text-teal px-4 py-2 rounded-pill mb-3">
+                        <i class="bi bi-chat-quote me-1"></i> Patient Stories
+                    </span>
+                    <h2 class="display-5 font-serif fw-bold">
+                        What Our <span class="gradient-text">Patients</span> Say
+                    </h2>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="glass-card p-4 card-hover h-100 position-relative">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fs-5 fst-italic opacity-75 mb-4">"I was suffering from severe sciatica for 3 years. After just 5 sessions of Kati Basti and Cupping therapy, my pain is almost gone."</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="rounded-circle bg-teal-subtle d-flex align-items-center justify-content-center fw-bold text-teal" style="width: 50px; height: 50px;">RV</div>
+                                <div>
+                                    <h6 class="mb-0">Ramesh Verma</h6>
+                                    <small class="opacity-50">Bilaspur</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="glass-card p-4 card-hover h-100 position-relative">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fs-5 fst-italic opacity-75 mb-4">"Excellent treatment for PCOD. I wanted to avoid hormonal medicines. Dr. Sushmita's approach helped me naturally regulate my cycle."</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="rounded-circle bg-teal-subtle d-flex align-items-center justify-content-center fw-bold text-teal" style="width: 50px; height: 50px;">PS</div>
+                                <div>
+                                    <h6 class="mb-0">Priya S.</h6>
+                                    <small class="opacity-50">Raipur</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="glass-card p-4 card-hover h-100 position-relative">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fs-5 fst-italic opacity-75 mb-4">"My mother had frozen shoulder and couldn't move her arm. Agnikarma therapy gave her instant relief. Highly recommended."</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="rounded-circle bg-teal-subtle d-flex align-items-center justify-content-center fw-bold text-teal" style="width: 50px; height: 50px;">AT</div>
+                                <div>
+                                    <h6 class="mb-0">Amit Tiwari</h6>
+                                    <small class="opacity-50">Korba</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section-padding bg-dark bg-opacity-25">
+            <div class="container">
+                <h2 class="display-5 font-serif fw-bold text-center mb-5">Gallery</h2>
+                <div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g1.jpg" alt="Treatment Room">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g2.jpg" alt="Ayurvedic Therapy">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g3.jpeg" alt="Consultation">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g4.jpeg" alt="Herbal Treatment">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g5.jpg" alt="Therapy Session">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g6.jpg" alt="Panchakarma">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g7.png" alt="Natural Healing">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 fade-in">
+                        <div class="gallery-item">
+                            <img src="/static/img/g8.jpeg" alt="Wellness Center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wellness Section -->
+        <section id="wellness" class="section-padding bg-dark bg-opacity-25 position-relative">
+            <div class="position-absolute top-0 start-0 w-100 h-100 pattern-bg opacity-25"></div>
+            <div class="container position-relative z-1">
+                <div class="text-center mb-5 fade-in">
+                    <span class="badge bg-teal-subtle text-teal px-4 py-2 rounded-pill mb-3">
+                        <i class="bi bi-heart-fill me-1"></i> Wellness
+                    </span>
+                    <h2 class="display-5 font-serif fw-bold mb-3">Holistic <span class="gradient-text">Wellness</span></h2>
+                    <p class="lead opacity-75 mx-auto" style="max-width: 800px;">Experience the profound benefits of ancient Ayurvedic wellness traditions designed to restore balance, vitality, and inner peace.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop" class="w-100 h-100 object-fit-cover" alt="Detoxification">
+                            </div>
+                            <div class="p-4">
+                                <span class="badge bg-success bg-opacity-75 mb-2 rounded-pill">Purification</span>
+                                <h4 class="font-serif fw-bold h5">Detoxification</h4>
+                                <p class="small opacity-75 mb-4">A complete internal purification process to remove deep-seated toxins and rejuvenate every cell.</p>
+                                <button onclick="openModal()" class="btn btn-outline-teal w-100 rounded-pill btn-sm">Inquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop" class="w-100 h-100 object-fit-cover" alt="Skin & Hair">
+                            </div>
+                            <div class="p-4">
+                                <span class="badge bg-warning bg-opacity-75 mb-2 rounded-pill">Soundarya Vardhani</span>
+                                <h4 class="font-serif fw-bold h5">Skin & Hair Care</h4>
+                                <p class="small opacity-75 mb-4">Enhance your natural beauty through time-tested Ayurvedic formulations and therapies.</p>
+                                <button onclick="openModal()" class="btn btn-outline-teal w-100 rounded-pill btn-sm">Inquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 200px;">
+                                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop" class="w-100 h-100 object-fit-cover" alt="Stress">
+                            </div>
+                            <div class="p-4">
+                                <span class="badge bg-primary bg-opacity-75 mb-2 rounded-pill">Manas Mitra</span>
+                                <h4 class="font-serif fw-bold h5">Mental Well-being</h4>
+                                <p class="small opacity-75 mb-4">Calm your mind and strengthen your nervous system with specialized therapies.</p>
+                                <button onclick="openModal()" class="btn btn-outline-teal w-100 rounded-pill btn-sm">Inquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 200px;">
+                                <img src="https://janikaayurveda.com/wp-content/uploads/2023/03/Postpartum-Mother-and-New-Baby-Can-Keep-Cool-This-Summer.png" class="w-100 h-100 object-fit-cover" alt="Post-Natal">
+                            </div>
+                            <div class="p-4">
+                                <span class="badge bg-danger bg-opacity-75 mb-2 rounded-pill">Matra Raksha</span>
+                                <h4 class="font-serif fw-bold h5">Post-Natal Care</h4>
+                                <p class="small opacity-75 mb-4">Traditional care for new mothers supporting physical recovery and mental strength.</p>
+                                <button onclick="openModal()" class="btn btn-outline-teal w-100 rounded-pill btn-sm">Inquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 200px;">
+                                <img src="https://www.ajhospital.in/storage/files/news/Blog/18.png" class="w-100 h-100 object-fit-cover" alt="Pregnancy">
+                            </div>
+                            <div class="p-4">
+                                <span class="badge bg-info bg-opacity-75 mb-2 rounded-pill">Garbh Sanskar</span>
+                                <h4 class="font-serif fw-bold h5">Pregnancy Care</h4>
+                                <p class="small opacity-75 mb-4">Ancient science of prenatal education to ensure the well-being of mother and baby.</p>
+                                <button onclick="openModal()" class="btn btn-outline-teal w-100 rounded-pill btn-sm">Inquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 200px;">
+                                <img src="https://www.ibshospitals.com/specialityicon/661112542f875Spine%20care.webp" class="w-100 h-100 object-fit-cover" alt="Neuro">
+                            </div>
+                            <div class="p-4">
+                                <span class="badge bg-teal bg-opacity-75 mb-2 rounded-pill">Vata Chikitsa</span>
+                                <h4 class="font-serif fw-bold h5">Neuro & Spine Care</h4>
+                                <p class="small opacity-75 mb-4">Specialized protocols for conditions affecting the spine and nerves.</p>
+                                <button onclick="openModal()" class="btn btn-outline-teal w-100 rounded-pill btn-sm">Inquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5 fade-in">
+                    <span class="badge bg-teal-subtle text-teal px-4 py-2 rounded-pill mb-3">
+                        <i class="bi bi-bag-heart-fill me-1"></i> Products
+                    </span>
+                    <h2 class="display-5 font-serif fw-bold mb-3">Ayurvedic <span class="gradient-text">Products</span></h2>
+                    <p class="opacity-75">Premium Ayurvedic formulations crafted for your health and wellness</p>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 250px;">
+                                <img src="/static/img/p1.jpeg" class="w-100 h-100 object-fit-cover" alt="Kumkumadi Tailam">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-serif fw-bold h5">Kumkumadi Tailam</h4>
+                                <p class="small opacity-75 mb-4">Premium facial oil for glowing, healthy skin. Helps with blemishes and natural radiance.</p>
+                                <span class="badge bg-teal-subtle text-teal border border-teal border-opacity-25 rounded-pill px-3">Bestseller</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 250px;">
+                                <img src="/static/img/Swarnavprashan.jpeg" class="w-100 h-100 object-fit-cover" alt="Swarn Prashan">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-serif fw-bold h5">Swarn Prashan</h4>
+                                <p class="small opacity-75 mb-4">Gold-based immunity booster for children. Enhances memory and development naturally.</p>
+                                <span class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 rounded-pill px-3">Immunity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card card-hover h-100 overflow-hidden">
+                            <div style="height: 250px;">
+                                <img src="/static/img/p3.jpg" class="w-100 h-100 object-fit-cover" alt="Masi Kalpana">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-serif fw-bold h5">Masi Kalpana</h4>
+                                <p class="small opacity-75 mb-4">Traditional Ayurvedic formulation for holistic wellness and overall vitality.</p>
+                                <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 rounded-pill px-3">Natural</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <button onclick="openModal()" class="btn btn-primary-custom px-5 py-3 fs-5">Inquire About Products</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-padding position-relative">
+            <div class="container position-relative z-1">
+                <div class="row g-5">
+                    <!-- Left Column -->
+                    <div class="col-lg-6 fade-in-left">
+                        <span class="badge bg-teal-subtle text-teal px-4 py-2 rounded-pill mb-3">
+                            <i class="bi bi-geo-alt me-1"></i> Get in Touch
+                        </span>
+                        <h2 class="display-5 font-serif fw-bold mb-4">
+                            Visit Our <span class="gradient-text">Clinic</span>
+                        </h2>
+                        <p class="lead opacity-75 mb-5">
+                            We are located in the heart of Bilaspur. Book your appointment today for a consultation with Dr. Sushmita Gumber.
+                        </p>
+                        
+                        <!-- Map -->
+                        <div class="rounded-4 overflow-hidden border border-white border-opacity-10 mb-5 shadow" style="height: 300px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600!2d82.1623439!3d22.0728245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280b3e05ccb9d7%3A0x6ee6fb233361c8d1!2sA%20R%20Arcade!5e0!3m2!1sen!2sin!4v1705500000000!5m2!1sen!2sin" width="100%" height="100%" allowfullscreen="" loading="lazy" class="border-0"></iframe>
+                        </div>
+                        
+                        <!-- Contact Info Cards -->
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="glass-card p-3 text-center">
+                                    <i class="bi bi-geo-fill fs-3 text-teal mb-2 d-block"></i>
+                                    <h6>Address</h6>
+                                    <p class="small opacity-50 mb-0">Arcade Complex, Bilaspur</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="glass-card p-3 text-center">
+                                    <i class="bi bi-telephone-fill fs-3 text-teal mb-2 d-block"></i>
+                                    <h6>Phone</h6>
+                                    <p class="small opacity-50 mb-0">+91 9755550613</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="glass-card p-3 text-center">
+                                    <i class="bi bi-clock-fill fs-3 text-teal mb-2 d-block"></i>
+                                    <h6>Timings</h6>
+                                    <p class="small opacity-50 mb-0">9 AM - 8 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Appointment Form -->
+                    <div class="col-lg-6 fade-in-right">
+                        <div class="glass-card overflow-hidden h-100">
+                            <div class="p-4 bg-teal text-white">
+                                <h3 class="font-serif fw-bold mb-0 d-flex align-items-center gap-2">
+                                    <i class="bi bi-calendar-plus"></i> Request Appointment
+                                </h3>
+                            </div>
+                            <div class="p-4 p-md-5">
+                                <form id="appointment-form">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label small fw-bold opacity-75">NAME *</label>
+                                            <input type="text" id="name" required class="form-control form-control-custom" placeholder="Your Name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label small fw-bold opacity-75">PHONE *</label>
+                                            <input type="tel" id="phone" required class="form-control form-control-custom" placeholder="Phone Number">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label small fw-bold opacity-75">EMAIL (OPTIONAL)</label>
+                                            <input type="email" id="email" class="form-control form-control-custom" placeholder="your@email.com">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label small fw-bold opacity-75">PROBLEM</label>
+                                            <select id="problem" class="form-select form-control-custom">
+                                                <option value="" selected>Select a problem...</option>
+                                                <option value="spine">Spine/Back Pain</option>
+                                                <option value="joint">Joint Pain/Arthritis</option>
+                                                <option value="sciatica">Sciatica</option>
+                                                <option value="migraine">Migraine</option>
+                                                <option value="pcod">PCOD/Stomach</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label small fw-bold opacity-75">MESSAGE</label>
+                                            <textarea id="message" rows="3" class="form-control form-control-custom" placeholder="Briefly describe your issue..."></textarea>
+                                        </div>
+                                        <div class="col-12 mt-4">
+                                            <button type="submit" class="btn btn-primary-custom w-100 py-3 fs-5 fw-bold shadow-glow">
+                                                Send Request <i class="bi bi-send ms-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-dark text-white border-top border-white border-opacity-10 position-relative">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-3 mb-4">
+                        <div class="logo-icon p-2">
+                            <i class="bi bi-leaf"></i>
+                        </div>
+                        <div>
+                            <span class="fs-5 font-serif fw-bold d-block">DR. SUSHMITA'S</span>
+                            <span class="small text-teal text-uppercase tracking-widest">Neurotherapy Center</span>
+                        </div>
+                    </div>
+                    <p class="opacity-50 small mb-4">
+                        Specialized Ayurvedic care for spine, joint, and nerve related disorders. Combining ancient Panchakarma with modern neurotherapy.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <h6 class="font-serif fw-bold mb-4">Quick Links</h6>
+                    <ul class="list-unstyled opacity-75 small">
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none hover-teal">About Center</a></li>
+                        <li class="mb-2"><a href="#doctors" class="text-white text-decoration-none hover-teal">Dr. Sushmita</a></li>
+                        <li class="mb-2"><a href="#treatments" class="text-white text-decoration-none hover-teal">Therapies</a></li>
+                        <li class="mb-2"><a href="#conditions" class="text-white text-decoration-none hover-teal">Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-lg-3">
+                    <h6 class="font-serif fw-bold mb-4">Contact Us</h6>
+                    <ul class="list-unstyled opacity-75 small">
+                        <li class="mb-3 d-flex gap-2">
+                            <i class="bi bi-geo-alt text-teal"></i>
+                            <span>4th Floor, Arcade Complex, Bilaspur (C.G.)</span>
+                        </li>
+                        <li class="mb-3 d-flex gap-2">
+                            <i class="bi bi-telephone text-teal"></i>
+                            <span>+91 9755550613</span>
+                        </li>
+                        <li class="mb-3 d-flex gap-2">
+                            <i class="bi bi-clock text-teal"></i>
+                            <span>09:00 AM - 08:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-5 opacity-10">
+            <div class="text-center small opacity-50 mt-4">
+                © 2026 Dr. Sushmita Ayurvedic Neurotherapy Center.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919755550613" class="whatsapp-btn text-white text-decoration-none" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Floating Chat Button -->
+    <button id="chat-fab" onclick="openChatModal()">
+        <i class="bi bi-chat-dots-fill"></i>
+    </button>
+
+    <!-- Chat Modal -->
+    <div id="chat-modal" class="d-none">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="d-flex align-items-center gap-2 text-white">
+                    <div class="bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 35px; height: 35px;">
+                        <i class="bi bi-robot text-teal"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">Clinic Assistant</h6>
+                        <small class="opacity-75" style="font-size: 10px;">AI Health Assistant</small>
+                    </div>
+                </div>
+                <button onclick="closeChatModal()" class="btn btn-link text-white p-0"><i class="bi bi-x-lg"></i></button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="bg-light text-dark p-3 rounded-3 align-self-start shadow-sm" style="max-width: 85%;">
+                    <p class="small mb-0">Hello! I'm Dr. Sushmita's assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <form id="chat-form" class="d-flex gap-2">
+                    <input type="text" id="chat-input" placeholder="Type a message..." class="form-control rounded-pill border-0 px-3 bg-light shadow-none">
+                    <button type="submit" class="btn btn-primary-custom rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                        <i class="bi bi-send-fill"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment Modal -->
+    <div class="modal fade" id="appointment-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-content-custom shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h4 class="modal-title font-serif fw-bold">Book Appointment</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="modal-appointment-form">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold opacity-75">YOUR NAME</label>
+                            <input type="text" id="apt-name" required class="form-control form-control-custom" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold opacity-75">PHONE NUMBER</label>
+                            <input type="tel" id="apt-phone" required class="form-control form-control-custom" placeholder="Enter your phone">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold opacity-75">SELECT TREATMENT</label>
+                            <select id="apt-treatment" required class="form-select form-control-custom">
+                                <option value="">Choose a treatment</option>
+                                <option value="Abhyanga">Abhyanga</option>
+                                <option value="Cupping">Hot/Fire Cupping</option>
+                                <option value="Kati Basti">Kati Basti</option>
+                                <option value="Janu Basti">Janu Basti</option>
+                                <option value="Nasya">Nasya</option>
+                                <option value="Shirodhara">Shirodhara</option>
+                                <option value="Acupuncture">Acupuncture</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold opacity-75">PREFERRED DATE</label>
+                            <input type="date" id="apt-date" required class="form-control form-control-custom">
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100 py-3 fw-bold fs-5">
+                            Confirm Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toast-body-text">
+                    Success!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    <script>
+        // Data for dynamic rendering
+        const treatments = [
+            { name: 'Abhyanga', tags: ['Body Massage', 'Relaxation', 'Circulation'], description: 'A therapeutic full-body massage with warm medicated oils to improve circulation', image: 'https://t3.ftcdn.net/jpg/16/77/25/98/360_F_1677259860_SqFUK1Ct5rnRuHC6D94ukVWKGgwkQG8L.jpg' },
+            { name: 'Hot/Fire Cupping', tags: ['Vacuum', 'Blood', 'Hot'], description: 'Vacuum and bloodletting therapy to relieve muscle tension and pain.', image: 'https://www.verywellhealth.com/thmb/9SeERSBjmeupZP6-bZKAKGpuPaY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1283338558-c941ac5c27534db88fbaa09d39ccf0c0.jpg' },
+            { name: 'Kati Basti', tags: ['Kati', 'Greeva', 'Janu'], description: 'Targeted oil pooling treatments for localized pain relief.', image: 'https://productimages.withfloats.com/actual/5bb4b4ef8fb0200001119aed.jpg' },
+            { name: 'Janu Basti', tags: ['Kati', 'Greeva', 'Janu'], description: 'Targeted oil pooling treatments for localized pain relief.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXmnzOhcXp3g2SPdY1lWoCydDFmTHwOVjmaQ&s' },
+            { name: 'Greeva Basti', tags: ['Kati', 'Greeva', 'Janu'], description: 'Targeted oil pooling treatments for localized pain relief.', image: 'https://www.keralaayurvedakendra.com/images/Greeva-Basti.webp' },
+            { name: 'Vamana', tags: ['Detox', 'Healing'], description: 'Eliminate excess Kapha dosha and toxins (Ama) from the stomach and respiratory tract', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9OllGKQo9ByD4qY0oran4FCEkJCjDGKwf5g&s' },
+            { name: 'Virechana', tags: ['Detox', 'Healing'], description: 'Induces controlled purgation to eliminate accumulated Pitta toxins from the liver', image: 'https://mauryaayurveda.com/wp-content/uploads/2024/03/VIRECHANA.png' },
+            { name: 'Rakthamokshan', tags: ['Blood Purifier', 'Immunity'], description: 'Ayurvedic detoxification therapy (part of Panchakarma) designed to remove vitiated, toxic blood', image: 'https://www.sgvpholistichospital.org/wp-content/uploads/2026/01/About-Raktamokshana.jpg' },
+            { name: 'Nasya', tags: ['Detox', 'Healing'], description: 'Eliminate excess Kapha dosha and toxins (Ama) from the head and neck region', image: 'https://dnaveda.com/wp-content/uploads/2025/09/Introduction-to-Nasya-Ayurvedic-Treatment-Nasya-Karma.jpg' },
+            { name: 'Sarvanga Swedana', tags: ['Detox', 'Healing'], description: 'Whole-body sweating induced by herbal steam, usually administered in a specialized chamber', image: 'https://www.earthhospital.co.in/photo/treatments/82749958032.webp' },
+            { name: 'Agnikarma', tags: ['Detox', 'Healing'], description: 'Ancient Ayurvedic para-surgical procedure used to treat chronic pain, musculoskeletal disorders', image: 'https://bizimages.withfloats.com/actual/a455bf73ce4f40e2925683ac19960426.jpg' },
+            { name: 'Leech Therapy', tags: ['Detox', 'Healing', 'Inflammation'], description: 'Leech therapy, or hirudotherapy, uses medicinal leeches to improve blood circulation, reduce inflammation', image: 'https://ayurdhama.com/wp-content/uploads/2022/09/Leech-Therapy.jpg' },
+            { name: 'Netra Tarpan', tags: ['Eye Care', 'Vision'], description: 'Rejuvenating eye treatment using medicated ghee for vision care.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFgnkgNPCRqlEq4zRC6hwORHQLAiW-EVrgw&s' },
+            { name: 'Shirodhara', tags: ['Stress Relief', 'Migraine'], description: 'Continuous stream of warm oil on the forehead for stress and insomnia.', image: 'https://m.media-amazon.com/images/I/61d5ObnM2xL.jpg' },
+            { name: 'Shirobasti', tags: ['Vata', 'Pitta'], description: 'Ayurvedic therapy involving the retention of warm, medicated oil on the scalp for 30-60 minutes', image: 'https://manage.ayurbethaniya.org/uploads/media/shirobasti-treatment-kerala66c88b0957382.jpg' },
+            { name: 'Acupuncture Needling', tags: ['Pain Relief', 'Inflammation'], description: 'Fine needle therapy to balance energy and relieve chronic pain.', image: 'https://www.kayaykalp.com/wp-content/uploads/2023/11/Suche_iglowanie-1024x685-1.jpg' },
+            { name: 'Swarnavprashan', tags: ['Swarnavprashan'], description: 'Suvarnaprashana is an ancient Ayurvedic immunization technique for children...', image: '/static/img/Swarnavprashan.jpeg' }
+        ];
+
+        const conditions = [
+            { name: 'Slip Disc', image: 'https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/article_thumbnails/BigBead/herniated_disk_diagnosis_bigbead/1800x1200_herniated_disk_diagnosis_bigbead.jpg?resize=750px:*&output-quality=75' },
+            { name: 'Sciatica', image: 'https://spinehealth.org/wp-content/uploads/2025/09/iStock-949390654.jpg' },
+            { name: 'Frozen Shoulder', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYdV_-kXDHymRu1EZ9QUxRJB_QoVsvoFGQ3g&s' },
+            { name: 'Cervical Spondylosis', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRq086fsOMqeEX99CbmO7W6LUGk-V5Vp3gA&s' },
+            { name: 'Lumbar Spondylosis', image: 'https://charaka.b-cdn.net/wp-content/uploads/2020/04/low-back-pain.jpeg' },
+            { name: 'Knee Pain', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TjXASAhp_2nx7d3RzSyzCW7X-Ro4K1oNYw&s' },
+            { name: 'Arthritis', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTab0X9P_0LBuKpcgS9T2kH6RLBXirDPhtspw&s' },
+            { name: 'Migraine', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGvnK3OE70g-NLggiYu-_PO67gMWHfmpQ_NA&s' },
+            { name: 'Paralysis', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQt1TBKNsln--y1pAbW_uy9As8KOZLsv7neA&s' },
+            { name: 'PCOD/PCOS', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_0g-GQw-Atc-zhkXEBjZ70XRBp3pvBEjq-A&s' },
+            { name: 'Back Pain', image: 'https://www.squareonephysio.ca/hubfs/Imported_Blog_Media/back-pain-spine.jpg' },
+            { name: 'Neck Pain', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDWp3kHDcFtTH6pDReMjdhgogrRjYmzNvzg&s' },
+            { name: 'Joint Pain', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRevh2yVJf6c8yguKvKCSE1XXEOgDoKoZnvQ&s' },
+            { name: 'Tennis Elbow', image: 'https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/10/43/ds00469_im00373_mcdc7_tennis_elbow_jpg.jpg' },
+            { name: 'Carpal Tunnel', image: 'https://www.hopkinsmedicine.org/-/media/images/health/2_-treatment/orthopedics/carpal-tunnel.jpg?h=404&w=600&hash=DA92614178DBE305EDA3B3D0082443E4' }
+        ];
+
+        function renderTreatments() {
+            const container = document.getElementById('treatments-row');
+            if (!container) return;
+            container.innerHTML = treatments.map(t => `
+                <div class="col-md-6 col-lg-3">
+                    <div class="glass-card treatment-card card-hover overflow-hidden h-100">
+                        <div class="treatment-img-container">
+                            <img src="${t.image}" alt="${t.name}">
+                        </div>
+                        <div class="p-3">
+                            <div class="d-flex gap-1 mb-2">
+                                ${t.tags.map(tag => `<span class="badge bg-teal-subtle text-teal" style="font-size: 8px;">${tag}</span>`).join('')}
+                            </div>
+                            <h5 class="fw-bold mb-1 text-white">${t.name}</h5>
+                            <p class="small opacity-75 mb-3 text-white">${t.description}</p>
+                            <button onclick="openModal()" class="btn btn-link p-0 text-teal text-decoration-none small fw-bold">Book Now <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderConditions() {
+            const container = document.getElementById('conditions-row');
+            if (!container) return;
+            container.innerHTML = conditions.map(c => `
+                <div class="col">
+                    <div class="glass-card card-hover overflow-hidden h-100">
+                        <div style="height: 120px;">
+                            <img src="${c.image}" alt="${c.name}" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="p-2 text-center">
+                            <h6 class="mb-0 small fw-bold text-white">${c.name}</h6>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTreatments();
+            renderConditions();
+        });
+    </script>
+</body>
+</html>
