@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_from_directory
 from flask_cors import CORS
 from models import db
 from routes import create_blueprints
@@ -32,6 +32,16 @@ def create_app(config_name=None):
             'status': 'healthy',
             'database': 'connected'
         }), 200
+
+    @app.route('/sitemap.xml')
+    def sitemap():
+        static_dir = app.static_folder or 'static'
+        return send_from_directory(static_dir, 'sitemap.xml', mimetype='application/xml')
+
+    @app.route('/robots.txt')
+    def robots():
+        static_dir = app.static_folder or 'static'
+        return send_from_directory(static_dir, 'robots.txt', mimetype='text/plain')
 
     @app.errorhandler(404)
     def not_found(error):
